@@ -1,0 +1,17 @@
+services:
+  banking.api:
+    image: ${DOCKER_REGISTRY-}bankingapi
+    container_name: Banking.Api
+    build:
+      context: .
+      dockerfile: src/API/Banking.Api/Dockerfile
+    ports:
+      - 5000:8080
+      - 5001:8081
+
+  banking.redis:
+    image: redis:latest
+    container_name: Banking.Redis
+    restart: always
+    ports:
+      - 6379:6379
