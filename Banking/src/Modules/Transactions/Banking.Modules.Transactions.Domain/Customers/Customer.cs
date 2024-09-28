@@ -7,23 +7,14 @@ public sealed class Customer : Entity
     public Guid Id { get; private set; }
     public string Name { get; private set; }
     public string Surname { get; private set; }
+    public DateTime CreatedAtUtc { get; private set; }
 
-    public static Customer Create(Guid id, string name, string surname, decimal initialCredit)
-    {
-        var customer = new Customer
+    public static Customer Create(Guid id, string name, string surname, DateTime createdAtUtc)
+        => new()
         {
             Id = id,
             Name = name,
-            Surname = surname
+            Surname = surname,
+            CreatedAtUtc = createdAtUtc
         };
-
-        if (initialCredit > 0)
-        {
-            customer.Raise(new CustomerInitialCreditedDomainEvent(customer.Id, initialCredit));
-        }
-
-        customer.Raise(new CustomerCreatedDomainEvent(customer.Id));
-
-        return customer;
-    }
 }

@@ -6,6 +6,5 @@ internal sealed class CreateCustomerCommandValidator : AbstractValidator<CreateC
     public CreateCustomerCommandValidator()
     {
         RuleFor(c => c.Id).NotEmpty();
-        RuleFor(c => c.InitialCredit).LessThan(0);
     }
 }

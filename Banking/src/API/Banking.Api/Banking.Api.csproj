@@ -17,6 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\Modules\Accounts\Banking.Modules.Accounts.Infrastructure\Banking.Modules.Accounts.Infrastructure.csproj" />
     <ProjectReference Include="..\..\Modules\Transactions\Banking.Modules.Transactions.Infrastructure\Banking.Modules.Transactions.Infrastructure.csproj" />
   </ItemGroup>
 

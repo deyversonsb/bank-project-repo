@@ -1,0 +1,7 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Common\Banking.Common.Infrastructure\Banking.Common.Infrastructure.csproj" />
+    <ProjectReference Include="..\Banking.Modules.Accounts.Application\Banking.Modules.Accounts.Application.csproj" />
+    <ProjectReference Include="..\Banking.Modules.Accounts.Presentation\Banking.Modules.Accounts.Presentation.csproj" />
+  </ItemGroup>
+</Project>

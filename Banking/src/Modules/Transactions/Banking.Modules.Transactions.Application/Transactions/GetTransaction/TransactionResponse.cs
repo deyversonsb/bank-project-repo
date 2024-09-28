@@ -6,4 +6,7 @@ public sealed record TransactionResponse(
     Guid CustomerId,
     decimal Amount,
     TransactionType TransactionType,
-    DateTime CreatedAtUtc);
+    DateTime CreatedAtUtc)
+{
+    public CustomerResponse Customer { get; set; }
+};

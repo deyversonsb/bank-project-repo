@@ -2,6 +2,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\..\Common\Banking.Common.Presentation\Banking.Common.Presentation.csproj" />
+    <ProjectReference Include="..\..\Accounts\Banking.Modules.Accounts.IntegrationEvents\Banking.Modules.Accounts.IntegrationEvents.csproj" />
     <ProjectReference Include="..\Banking.Modules.Transactions.Application\Banking.Modules.Transactions.Application.csproj" />
   </ItemGroup>
 
