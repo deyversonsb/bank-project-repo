@@ -3,6 +3,7 @@ using Banking.Api.Middleware;
 using Banking.Common.Application;
 using Banking.Common.Infrastructure;
 using Banking.Common.Presentation.Endpoints;
+using Banking.Modules.Accounts.Infrastructure;
 using Banking.Modules.Transactions.Infrastructure;
 
 WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
@@ -16,14 +17,18 @@ builder.Services.AddSwaggerGen(options =>
     options.CustomSchemaIds(t => t.FullName?.Replace('+', '.'));
 });
 
-builder.Services.AddApplication([Banking.Modules.Transactions.Application.AssemblyReference.Assembly]);
+builder.Services.AddApplication([
+    Banking.Modules.Transactions.Application.AssemblyReference.Assembly,
+    Banking.Modules.Accounts.Application.AssemblyReference.Assembly]);
 
 builder.Services.AddInfrastructure(
+    [TransactionsModule.ConfigureConsumers],
     builder.Configuration.GetConnectionString("Cache")!);
 
-builder.Configuration.AddModuleConfiguration(["transactions"]);
+builder.Configuration.AddModuleConfiguration(["transactions", "accounts"]);
 
 builder.Services.AddTransactionsModule(builder.Configuration);
+builder.Services.AddAccountsModule(builder.Configuration);
 
 WebApplication app = builder.Build();
 

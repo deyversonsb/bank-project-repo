@@ -2,6 +2,11 @@
   <ItemGroup>
     <FrameworkReference Include="Microsoft.AspNetCore.App" />
   </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MassTransit.Abstractions" Version="8.0.8" />
+  </ItemGroup>
+
   <ItemGroup>
     <ProjectReference Include="..\Banking.Common.Domain\Banking.Common.Domain.csproj" />
   </ItemGroup>

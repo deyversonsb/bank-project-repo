@@ -5,4 +5,5 @@ public sealed record CreateCustomerCommand(
     Guid Id,
     string Name,
     string Surname,
-    decimal InitialCredit) : ICommand<Guid>;
+    DateTime CreatedAtUtc,
+    decimal InitialCredit) : ICommand;

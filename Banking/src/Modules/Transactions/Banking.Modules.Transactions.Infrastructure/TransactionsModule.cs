@@ -5,6 +5,8 @@ using Banking.Modules.Transactions.Domain.Customers;
 using Banking.Modules.Transactions.Domain.Transactions;
 using Banking.Modules.Transactions.Infrastructure.Customers;
 using Banking.Modules.Transactions.Infrastructure.Transactions;
+using Banking.Modules.Transactions.Presentation.Customers;
+using MassTransit;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -23,6 +25,10 @@ public static class TransactionsModule
         return services;
     }
 
+    public static void ConfigureConsumers(IRegistrationConfigurator registrationConfigurator)
+    {
+        registrationConfigurator.AddConsumer<CustomerCreatedIntegrationEventConsumer>();
+    }
     private static void AddInfrastructure(this IServiceCollection services, IConfiguration configuration)
     {
         string databaseConnectionString = configuration.GetConnectionString("Database")!;

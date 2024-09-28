@@ -28,7 +28,7 @@ internal sealed class CreditTransactionCommandHandler(
             return Result.Failure<Guid>(result.Error);
         }
 
-        transactionRepository.InitialCredit(result.Value);
+        transactionRepository.Insert(result.Value);
 
         await unitOfWork.SaveChangesAsync(cancellationToken);
 

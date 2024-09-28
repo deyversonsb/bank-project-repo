@@ -1,0 +1,5 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Common\Banking.Common.Application\Banking.Common.Application.csproj" />
+  </ItemGroup>
+</Project>

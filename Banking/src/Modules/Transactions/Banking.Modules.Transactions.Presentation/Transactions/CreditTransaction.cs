@@ -14,7 +14,7 @@ internal sealed class CreditTransaction : IEndpoint
 
     public void MapEndpoint(IEndpointRouteBuilder app)
     {
-        app.MapPost("v1/transactions", async (Request request, ISender sender) =>
+        app.MapPost("v1/transactions/credit", async (Request request, ISender sender) =>
         {
             Result<Guid> result = await sender.Send(new CreditTransactionCommand(
                 request.CustomerId,
