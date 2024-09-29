@@ -8,8 +8,13 @@ public sealed class Customer : Entity
     public string Name { get; private set; }
     public string Surname { get; private set; }
     public DateTime CreatedAtUtc { get; private set; }
-    public static Customer Create(string name, string surname, decimal initialCredit)
+    public static Result<Customer> Create(string name, string surname, decimal initialCredit)
     {
+        if (initialCredit < 0)
+        {
+            return Result.Failure<Customer>(CustomerErrors.InitialCreditLessThanZero);
+        }
+
         var customer = new Customer()
         {
             Id = Guid.NewGuid(),

@@ -53,11 +53,19 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Banking.Modules.Accounts.In
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{E6D0D6CC-5367-423A-8D87-D06F31ACB1FA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankingArchitectureTests", "test\BankingArchitectureTests\BankingArchitectureTests.csproj", "{0091E090-B006-4177-87BE-BA5402490958}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BankingArchitectureTests", "test\BankingArchitectureTests\BankingArchitectureTests.csproj", "{0091E090-B006-4177-87BE-BA5402490958}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{58ECC1B8-D784-4BED-85BF-D09EFE654C87}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Banking.Modules.Accounts.ArchitectureTests", "src\Modules\Accounts\Banking.Modules.Accounts.ArchitectureTests\Banking.Modules.Accounts.ArchitectureTests.csproj", "{CBDE86F0-DB16-466F-BE5D-BC8E9EAD6438}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Banking.Modules.Accounts.ArchitectureTests", "src\Modules\Accounts\Banking.Modules.Accounts.ArchitectureTests\Banking.Modules.Accounts.ArchitectureTests.csproj", "{CBDE86F0-DB16-466F-BE5D-BC8E9EAD6438}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{6902FECE-E1FC-42E7-83AA-A1AD581985AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Banking.Modules.Transactions.ArchitectureTests", "src\Modules\Transactions\Banking.Modules.Transactions.ArchitectureTests\Banking.Modules.Transactions.ArchitectureTests.csproj", "{44DA334E-EE1C-488D-91C3-2E053DE3FFA9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Banking.Modules.Transactions.UnitTests", "src\Modules\Transactions\Banking.Modules.Transactions.UnitTests\Banking.Modules.Transactions.UnitTests.csproj", "{FCBD4A21-0470-4C80-90F5-2A33343794FD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Banking.Modules.Accounts.UnitTests", "src\Modules\Accounts\Banking.Modules.Accounts.UnitTests\Banking.Modules.Accounts.UnitTests.csproj", "{8241E29E-C70C-40CA-94E5-22AFF9DAE6D5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -133,6 +141,18 @@ Global
 		{CBDE86F0-DB16-466F-BE5D-BC8E9EAD6438}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CBDE86F0-DB16-466F-BE5D-BC8E9EAD6438}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CBDE86F0-DB16-466F-BE5D-BC8E9EAD6438}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44DA334E-EE1C-488D-91C3-2E053DE3FFA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44DA334E-EE1C-488D-91C3-2E053DE3FFA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44DA334E-EE1C-488D-91C3-2E053DE3FFA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44DA334E-EE1C-488D-91C3-2E053DE3FFA9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FCBD4A21-0470-4C80-90F5-2A33343794FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCBD4A21-0470-4C80-90F5-2A33343794FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCBD4A21-0470-4C80-90F5-2A33343794FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCBD4A21-0470-4C80-90F5-2A33343794FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8241E29E-C70C-40CA-94E5-22AFF9DAE6D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8241E29E-C70C-40CA-94E5-22AFF9DAE6D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8241E29E-C70C-40CA-94E5-22AFF9DAE6D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8241E29E-C70C-40CA-94E5-22AFF9DAE6D5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -160,6 +180,10 @@ Global
 		{0091E090-B006-4177-87BE-BA5402490958} = {E6D0D6CC-5367-423A-8D87-D06F31ACB1FA}
 		{58ECC1B8-D784-4BED-85BF-D09EFE654C87} = {99B9FC92-1A65-4BCF-A585-C1A534BBD05D}
 		{CBDE86F0-DB16-466F-BE5D-BC8E9EAD6438} = {58ECC1B8-D784-4BED-85BF-D09EFE654C87}
+		{6902FECE-E1FC-42E7-83AA-A1AD581985AF} = {305B6BA5-591D-45C8-BED6-1E97674B2D46}
+		{44DA334E-EE1C-488D-91C3-2E053DE3FFA9} = {6902FECE-E1FC-42E7-83AA-A1AD581985AF}
+		{FCBD4A21-0470-4C80-90F5-2A33343794FD} = {6902FECE-E1FC-42E7-83AA-A1AD581985AF}
+		{8241E29E-C70C-40CA-94E5-22AFF9DAE6D5} = {58ECC1B8-D784-4BED-85BF-D09EFE654C87}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {317572CA-7B6C-497D-BCDE-80ABBDE644A2}
