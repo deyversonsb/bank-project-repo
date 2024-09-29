@@ -1,7 +1,7 @@
 ﻿using Banking.Common.Domain;
 
 namespace Banking.Modules.Accounts.Domain.Customers;
-public sealed class CustomerCreatedDomainEvent(Guid customerId, decimal initialCredit) : DomainEvent
+public class CustomerCreatedDomainEvent(Guid customerId, decimal initialCredit) : DomainEvent
 {
     public Guid CustomerId { get; init; } = customerId;
     public decimal InitialCredit { get; init; } = initialCredit;
