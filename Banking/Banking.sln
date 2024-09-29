@@ -49,7 +49,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Banking.Modules.Accounts.In
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Banking.Modules.Accounts.Presentation", "src\Modules\Accounts\Banking.Modules.Accounts.Presentation\Banking.Modules.Accounts.Presentation.csproj", "{BDA9CDC1-E592-4F60-96F9-588AFA0E7065}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Banking.Modules.Accounts.IntegrationEvents", "src\Modules\Accounts\Banking.Modules.Accounts.IntegrationEvents\Banking.Modules.Accounts.IntegrationEvents.csproj", "{7680AF3D-6711-4136-95FD-51F7A97EF663}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Banking.Modules.Accounts.IntegrationEvents", "src\Modules\Accounts\Banking.Modules.Accounts.IntegrationEvents\Banking.Modules.Accounts.IntegrationEvents.csproj", "{7680AF3D-6711-4136-95FD-51F7A97EF663}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{E6D0D6CC-5367-423A-8D87-D06F31ACB1FA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankingArchitectureTests", "test\BankingArchitectureTests\BankingArchitectureTests.csproj", "{0091E090-B006-4177-87BE-BA5402490958}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{58ECC1B8-D784-4BED-85BF-D09EFE654C87}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Banking.Modules.Accounts.ArchitectureTests", "src\Modules\Accounts\Banking.Modules.Accounts.ArchitectureTests\Banking.Modules.Accounts.ArchitectureTests.csproj", "{CBDE86F0-DB16-466F-BE5D-BC8E9EAD6438}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -117,6 +125,14 @@ Global
 		{7680AF3D-6711-4136-95FD-51F7A97EF663}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7680AF3D-6711-4136-95FD-51F7A97EF663}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7680AF3D-6711-4136-95FD-51F7A97EF663}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0091E090-B006-4177-87BE-BA5402490958}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0091E090-B006-4177-87BE-BA5402490958}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0091E090-B006-4177-87BE-BA5402490958}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0091E090-B006-4177-87BE-BA5402490958}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CBDE86F0-DB16-466F-BE5D-BC8E9EAD6438}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBDE86F0-DB16-466F-BE5D-BC8E9EAD6438}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBDE86F0-DB16-466F-BE5D-BC8E9EAD6438}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBDE86F0-DB16-466F-BE5D-BC8E9EAD6438}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -141,6 +157,9 @@ Global
 		{FD39E618-9F88-4AF9-B522-7C0CD26155A7} = {99B9FC92-1A65-4BCF-A585-C1A534BBD05D}
 		{BDA9CDC1-E592-4F60-96F9-588AFA0E7065} = {99B9FC92-1A65-4BCF-A585-C1A534BBD05D}
 		{7680AF3D-6711-4136-95FD-51F7A97EF663} = {99B9FC92-1A65-4BCF-A585-C1A534BBD05D}
+		{0091E090-B006-4177-87BE-BA5402490958} = {E6D0D6CC-5367-423A-8D87-D06F31ACB1FA}
+		{58ECC1B8-D784-4BED-85BF-D09EFE654C87} = {99B9FC92-1A65-4BCF-A585-C1A534BBD05D}
+		{CBDE86F0-DB16-466F-BE5D-BC8E9EAD6438} = {58ECC1B8-D784-4BED-85BF-D09EFE654C87}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {317572CA-7B6C-497D-BCDE-80ABBDE644A2}
