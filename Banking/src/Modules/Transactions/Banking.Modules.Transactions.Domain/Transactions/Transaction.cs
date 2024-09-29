@@ -54,7 +54,7 @@ public sealed class Transaction : Entity
         Amount = amount;
         CreatedAtUtc = DateTime.UtcNow;
 
-        Raise(new TransactionCreditedDomainEvent(Id, Amount, CreatedAtUtc));
+        Raise(new TransactionCreditedDomainEvent(Id, CustomerId, Amount, CreatedAtUtc));
 
         return Result.Success();
     }
@@ -69,7 +69,7 @@ public sealed class Transaction : Entity
         CreatedAtUtc = DateTime.UtcNow;
         TransactionType = TransactionType.Debit;
 
-        Raise(new TransactionDebitedDomainEvent(Id, Amount, CreatedAtUtc));
+        Raise(new TransactionDebitedDomainEvent(Id, CustomerId, Amount, CreatedAtUtc));
 
         return Result.Success();
     }
