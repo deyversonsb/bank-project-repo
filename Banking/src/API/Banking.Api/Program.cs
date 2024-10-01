@@ -1,3 +1,4 @@
+using Banking.Api.Configurations;
 using Banking.Api.Extensions;
 using Banking.Api.Middleware;
 using Banking.Common.Application;
@@ -30,7 +31,21 @@ builder.Configuration.AddModuleConfiguration(["transactions", "accounts"]);
 builder.Services.AddTransactionsModule(builder.Configuration);
 builder.Services.AddAccountsModule(builder.Configuration);
 
+builder.Services.AddCors(options =>
+{
+    options.AddDefaultPolicy(
+        policy =>
+        {
+            policy.WithOrigins(Configuration.WebUrl)
+                  .AllowAnyHeader()
+                  .AllowAnyMethod()
+                  .AllowCredentials();
+        });
+});
+
 WebApplication app = builder.Build();
+
+app.UseCors();
 
 if (app.Environment.IsDevelopment())
 {
