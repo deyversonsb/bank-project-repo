@@ -30,6 +30,9 @@ Tests Frameworks:
 - Xunit
 - FluentAssertions
 
+CI/CD
+- Git Hub Actions
+
 # Getting Started
   
 ### Prerequisites
