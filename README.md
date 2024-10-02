@@ -1,3 +1,5 @@
+[![Build and Test](https://github.com/deyversonsb/bank-project-repo/actions/workflows/build.yml/badge.svg)](https://github.com/deyversonsb/bank-project-repo/actions/workflows/build.yml)
+
 # Bank Project
 
 The Banking Project API was implemented with vertical slice architecture:
